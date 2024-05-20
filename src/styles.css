@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { width: 100% }
+body { margin: 0; 
+    font-family: 'Bunketry2',!important;
+    color : #0d1f23;
+    background-color: #ead8c2;}
+@font-face {
+    font-family: 'Bunketry'; /*a name to be used later*/
+    src: url('/assets/Kaligraf_Latin.ttf') format("truetype"); /*URL to font*/
+}
+@font-face {
+    font-family: 'Bunketry2'; /*a name to be used later*/
+    src: url('/assets/gadugi.ttf') format("truetype"); /*URL to font*/
+}
+h1{
+    color : #706563!important;
+}
+.bunketry_header{
+    font-family: 'Bunketry',sans-serif !important;
+    font-size: 4rem !important;
+    color : #0d1f23;
+    Line-height: 1.5;
+    
+}
+  .container{
+    width : 75%;
+    display :border-box;
+
+  }
+  .container-mobile{
+    width : 87.5%;
+    display :border-box;
+
+  }

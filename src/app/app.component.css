@@ -1,0 +1,25 @@
+header {
+    display: block;
+    padding: var(--content-padding);
+    box-shadow: 0px 5px 25px var(--shadow-color);
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+.smallbreak {
+  line-height: 25%;
+}
+.section-card{
+
+  display :flex;
+
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.info-card{
+  display: block;
+
+}

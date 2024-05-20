@@ -1,0 +1,10 @@
+.section{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;height: 50vh;
+}
+img{
+    min-width: 100%;
+    min-height: 100%
+}
