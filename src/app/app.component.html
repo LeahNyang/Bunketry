@@ -6,9 +6,7 @@
   <br />
 </div>
 <body>
-  <app-navbar></app-navbar>
-
-    <app-aboutus-card></app-aboutus-card>
-
-  
+  <app-navbar [mobile]="mobile"></app-navbar>
+  <app-aboutus-card [mobile]="mobile"></app-aboutus-card>
+  <app-menu-card [mobile]="mobile"></app-menu-card>
 </body>

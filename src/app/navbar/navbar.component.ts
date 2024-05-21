@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,24 +13,7 @@ import { NgClass, NgIf } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  constructor(private responsive: BreakpointObserver) {
+  @Input() mobile = false;
 
-  }
-  hideSideMenu = false;
-  ngOnInit() {
-
-    this.responsive.observe([
-      Breakpoints.Medium,Breakpoints.Small,Breakpoints.XSmall])
-      .subscribe(result => {
-        if (result.matches) {
-          this.hideSideMenu = true;
-          console.log(result);
-        } else {
-          this.hideSideMenu = false;
-        }
-
-      });
-
-  }
 
 }

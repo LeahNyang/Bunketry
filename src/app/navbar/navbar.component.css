@@ -7,6 +7,13 @@
 
 
 }
+.stickNav{
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+}
 .navbar-links{
     display: flex;
     height: 100%;

@@ -1,24 +1,30 @@
 <div class="section">
     <div [ngClass]="!mobile? 'container' : 'container-mobile'">
-        <div style ="display: flex; align-items: center;
-        justify-content: center;padding-top: 80px;">
-            <div style ="width: 50%;">
-                <h1>About us</h1>
+        
+        <div class="desktop_card">
+            <div [ngClass]="!mobile? 'desktop_caption_container' : 'mobile_caption_container'">
+                <h1 *ngIf="!mobile" >About us</h1>
                 <br/>
                 <br/>
                 <br/>
                 <h2 class="bunketry_header">Hearty, healthy, homely</h2>
                 <br/>
-                <div style ="width: 60%;">
+                <div [ngClass]="!mobile? 'desktop_caption_text' : 'mobile_caption_text'">
                     <p>The Proofing Ground embraces the warmth of home to norish hearts and palates, and prove that quality always goes beyond. Enjoy our hand-kneaded sourdough and shokupan milk bread with curated compound butters, or indulge in our probiotic-rich kombucha and milk kefir - all freshly made on order</p>
                 </div>
+             
 
             </div>
-            <div style ="width: 60%;">
+            <div  [ngClass]="!mobile? 'desktop_image' : 'mobile_image'" >
                 <img src="/assets/About_816x499.png">
             </div>
+            <h1 *ngIf="mobile" style="margin-right: auto;" >About us</h1>
         </div>
      
 
     </div>
+
+</div>
+<div style ="background-color: red; height:20vh">
+    <p>carousel</p>
 </div>
