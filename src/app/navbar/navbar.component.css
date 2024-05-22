@@ -20,11 +20,9 @@
     width:100%;
     align-items: center;
     color: #ead8c2;
-
-    
     list-style-type: none;
     justify-content: space-between;
-    font-size: 150%;
+    font-size: 1rem;
 
 
 }

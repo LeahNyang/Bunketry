@@ -1,9 +1,9 @@
 <div class="section">
-    <div [ngClass]="!mobile? 'container' : 'container-mobile'">
+    <div class="container">
         
         <div class="desktop_card">
             <div [ngClass]="!mobile? 'desktop_caption_container' : 'mobile_caption_container'">
-                <h1 *ngIf="!mobile" >About us</h1>
+                <h3 *ngIf="!mobile" >ABOUT US</h3>
                 <br/>
                 <br/>
                 <br/>
@@ -18,13 +18,15 @@
             <div  [ngClass]="!mobile? 'desktop_image' : 'mobile_image'" >
                 <img src="/assets/About_816x499.png">
             </div>
-            <h1 *ngIf="mobile" style="margin-right: auto;" >About us</h1>
+            <h3 *ngIf="mobile" style="margin-right: auto;" >ABOUT US</h3>
         </div>
      
 
     </div>
 
 </div>
-<div style ="background-color: red; height:20vh">
+<br/>
+
+<div style ="background-color: #56272d; height:20vh">
     <p>carousel</p>
 </div>
