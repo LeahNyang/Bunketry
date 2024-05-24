@@ -11,6 +11,8 @@ import { timer,interval, take } from 'rxjs';
   styleUrl: './banner.component.css'
 })
 export class BannerComponent {
+  private timer = timer(0,5000);
+  
   background_images=[
     '/assets/Landing_01_1920x1011.png',
     '/assets/Landing_02_1920x1011.png',
@@ -19,7 +21,8 @@ export class BannerComponent {
   ];
   background_image = '/assets/Landing_01_1920x1011.png';
   index = 0;
-  change_background(){
+  
+  public change_background(){
     this.index+=1;
     if(this.index>3){
       this.index=0;
@@ -27,7 +30,7 @@ export class BannerComponent {
     this.background_image = this.background_images[this.index];
 
   }
-  numbers = timer(0, 5000).subscribe(n => this.change_background());
+  numbers = this.timer.subscribe(n => this.change_background());
 
 
 

@@ -1,14 +1,16 @@
 <div class="section">
     <div class="container">
+        
         <h3 >OUR MENU</h3>
         
         <h2 class="bunketry_header">Bread, brews & Beyond</h2>
         <br/>
         <br/>
+
         <div [ngClass]="!mobile? 'menu_layout' : 'mobile_menu_layout'">
 
-            <div [ngClass]="!mobile? 'menu_carousel' : 'mobile_menu_carousel'" >
-                <img src="/assets/Menu_01_502x631.png">
+            <div class="menu_carousel" [ngClass]="!mobile? '' : 'mobile_menu_carousel'"  >
+                <app-image-carousel [mobile]="mobile" [counter]="counter"></app-image-carousel>
             </div>
             
             <div [ngClass]="!mobile? 'menu' : 'mobile_menu'">
@@ -114,8 +116,8 @@
   
                 </div>
 
-                <h2 class="bunketry_header" style="margin-left: auto;">Prove it yourself!</h2>
-                <div style="margin-left: auto;">
+                <h2 class="bunketry_header" style="margin-left: auto;padding-bottom: 5px;padding-bottom: 5px;">Prove it yourself!</h2>
+                <div style="margin-left: auto; ">
                     <a href="https://theproofingground.cococart.co/" class="order-button"> Order Now</a>
                 </div>
 

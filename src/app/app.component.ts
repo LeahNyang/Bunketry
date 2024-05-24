@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { timer,interval, take } from 'rxjs';
 import { NavbarComponent }from './navbar/navbar.component';
 import { BannerComponent }from './banner/banner.component';
 import { AboutusCardComponent } from './aboutus-card/aboutus-card.component'
 import { MenuCardComponent } from './menu-card/menu-card.component'
+import { ContactusCardComponent } from './contactus-card/contactus-card.component'
+import  { ImageCarouselComponent} from './image-carousel/image-carousel.component'
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 import { RouterOutlet } from '@angular/router';
@@ -15,7 +18,9 @@ import { RouterOutlet } from '@angular/router';
     NavbarComponent,
     BannerComponent,
     AboutusCardComponent,
-    MenuCardComponent
+    MenuCardComponent,
+    ContactusCardComponent,
+    ImageCarouselComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -41,5 +46,7 @@ export class AppComponent {
       });
 
   }
+  counter=0;
+  numbers = timer(0, 5000).subscribe(n => {this.counter+=1});
 
 }

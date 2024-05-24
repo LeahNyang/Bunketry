@@ -40,11 +40,12 @@
     height:50px;
 
 }
+.navbar-links li:hover{
+    text-decoration: underline;
+}
 .navcontainer{
     display: flex;
     
-
-
 }
 .navcomponents{
     height: 10vh;

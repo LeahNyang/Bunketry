@@ -1,0 +1,46 @@
+.left_container{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+
+}
+.mobile_left_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.right_container{
+    width: 66%;
+}
+.right_container_padding{
+  padding-left: 80px;
+}
+.mobile_right_container{
+  width: 100%;
+}
+
+.container{
+    display: flex;
+}
+.mobile_container{
+    flex-direction: column;
+}
+span img {
+    height: 2rem;
+  }
+  span{
+    display: flex;
+    align-items: center;
+    
+  }
+  .customer_panel{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+ 
+  }
+  .customer_panel img{
+    height: 3rem;
+  }
+
