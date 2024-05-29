@@ -13,10 +13,10 @@
 
                 <div class="navcomponents" style="width:40% ;margin-left: auto;">
                     <ul class="navbar-links" *ngIf="!mobile">
-                        <li><a routerLink="/">About</a></li>
-                        <li><a routerLink="/about">Menu</a></li>
-                        <li><a routerLink="/about">Contact</a></li>
-                        <li style=" border:1.5px solid #ead8c2;"><a routerLink="/about">Order Now</a></li>
+                        <li><a (click)="scrollToAboutElement()">About</a></li>
+                        <li><a (click)="scrollToElement()">Menu</a></li>
+                        <li><a (click)="scrollToContactElement()">Contact</a></li>
+                        <li style=" border:1.5px solid #ead8c2;"><a href="https://theproofingground.cococart.co/" style="text-decoration: none;color: #ead8c2;">Order Now</a></li>
                     </ul>
 
                     <div *ngIf="mobile" style="margin-left: auto; border:1px solid #ead8c2;">
@@ -26,15 +26,15 @@
                         <mat-menu #menu="matMenu">
                             <button mat-menu-item>
 
-                                <span>About</span>
+                                <span (click)="scrollToAboutElement()">About</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span>Menu</span>
+                                <span (click)="scrollToElement()">Menu</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span>Contact</span>
+                                <span (click)="scrollToContactElement()">Contact</span>
                             </button>
                         </mat-menu>
                     </div>

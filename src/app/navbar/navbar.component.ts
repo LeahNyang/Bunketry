@@ -3,7 +3,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass, NgIf ,ViewportScroller} from '@angular/common';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +15,21 @@ import { NgClass, NgIf } from '@angular/common';
 })
 export class NavbarComponent {
   @Input() mobile = false;
+  public menu_id= "menu-section";
+  constructor(private scroller: ViewportScroller,) {
+    this.scroller.setOffset([0,100])
+  }
+  
+  scrollToElement() {
+    this.scroller.scrollToAnchor("menu-section");
+  }
+  scrollToContactElement() {
+    this.scroller.scrollToAnchor("contact-section");
+  }
+  
+  scrollToAboutElement() {
+    this.scroller.scrollToAnchor("about-section");
+  }
 
 
 }

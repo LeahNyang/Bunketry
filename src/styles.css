@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { width: 100% }
+html{
+  scroll-behavior: smooth;
+}
 body,footer,header { 
   margin: 0; 
     font-family: 'Bunketry2',!important;
@@ -26,12 +29,14 @@ h1,h3{
 }
   .container{
     width : 75%;
+    max-width: 1440px;
     display :border-box;
 
   }
   .container-mobile{
     width : 87.5%;
     display :border-box;
+    max-width: 1440px;
 
   }
   .section{
