@@ -13,28 +13,34 @@
 
                 <div class="navcomponents" style="width:40% ;margin-left: auto;">
                     <ul class="navbar-links" *ngIf="!mobile">
-                        <li><a (click)="scrollToAboutElement()">About</a></li>
-                        <li><a (click)="scrollToElement()">Menu</a></li>
-                        <li><a (click)="scrollToContactElement()">Contact</a></li>
-                        <li style=" border:1.5px solid #ead8c2;"><a href="https://theproofingground.cococart.co/" style="text-decoration: none;color: #ead8c2;">Order Now</a></li>
+                        <li><a (click)="scrollToAboutElement()" id="nav_about">About</a></li>
+                        <li><a (click)="scrollToElement()" id="nav_menu">Menu</a></li>
+                        <li><a (click)="scrollToContactElement()" id="nav_contact">Contact</a></li>
+                        <li style=" border:1.5px solid #ead8c2;"><a href="https://theproofingground.cococart.co/" style="text-decoration: none;color: #ead8c2;" id="nav_order">Order Now</a></li>
                     </ul>
 
                     <div *ngIf="mobile" style="margin-left: auto; border:1px solid #ead8c2;">
                         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
                             <mat-icon class="beige-icon">menu</mat-icon>
                         </button>
-                        <mat-menu #menu="matMenu">
+                        <mat-menu #menu="matMenu" >
                             <button mat-menu-item>
 
-                                <span (click)="scrollToAboutElement()">About</span>
+                                <span (click)="scrollToAboutElement()" id="nav_m_about">About</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span (click)="scrollToElement()">Menu</span>
+                                <span (click)="scrollToElement()" id="nav_m_menu">Menu</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span (click)="scrollToContactElement()">Contact</span>
+                                <span (click)="scrollToContactElement()" id="nav_m_contact">Contact</span>
+                            </button>
+                            <button mat-menu-item>
+                                <a href="https://theproofingground.cococart.co?utm_source=organic&utm_medium=website&utm_campaign=nav_order&utm_id=12393813481" style="text-decoration: none;" id="nav_m_order">
+                                    <span id="nav_m_order">Order</span>
+                                </a>
+                                
                             </button>
                         </mat-menu>
                     </div>

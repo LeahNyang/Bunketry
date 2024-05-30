@@ -2,28 +2,28 @@
     <div class="container" [ngClass]="!mobile? '' : 'mobile_container'">
         <div [ngClass]="!mobile? 'left_container' : 'mobile_left_container'">
             <h3 >GET IN TOUCH</h3>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://wa.me/6589061911">    
+            <a style="text-decoration: none;color: #0d1f23;" href="https://api.whatsapp.com/send?phone=6589061911&text=Hello%20The%20Proofing%20Ground%21%0D%0A%0D%0AName:%0D%0AItems:%0D%0ADelivery/Pickup:%0D%0ADelivery%20Address:%0D%0A%0D%0AWe%20will%20confirm%20your%20order%20as%20soon%20as%20possible.%20For%20our%20full%20menu,%20or%20if%20you%20do%20not%20receive%20our%20confirmation%20within%2030mins,%20please%20place%20an%20order%20through%20our%20website:%20theproofingground.sg%20for%20instant%20confirmation.%20Thank%20you%21" id="out_whatsapp">    
                 <span >
                     <img src="/assets/Contact_WA.png" style="object-fit: contain;"> &nbsp; +65 8906 1911
                 </span>
             </a>
         
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="mailto:contact@theproofingground.sg">
+            <a style="text-decoration: none;color: #0d1f23;" href="mailto:contact@theproofingground.sg" id="out_email">
                 <span>
                     <img src="/assets/Contact_Email.png"  style="object-fit: contain;"> &nbsp; contact&#64;theproofingground.sg
                 </span>
             </a>
             
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://tiktok.com/@theproofingground">
+            <a style="text-decoration: none;color: #0d1f23;" href="https://tiktok.com/@theproofingground" id="out_tiktok">
                 <span>
                     <img src="/assets/Contact_TT.png"  style="object-fit: contain;"> &nbsp; &#64;theproofingground
                 </span>
             </a>
             
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://instagram.com/theproofingground">
+            <a style="text-decoration: none;color: #0d1f23;" href="https://instagram.com/theproofingground" id="out_instagram">
                 <span >
                     <img src="/assets/Contact_IG.png"  style="object-fit: contain;"> &nbsp; &#64;theproofingground
                 </span>
@@ -47,5 +47,8 @@
             
         </div>
         
+    </div>
+    <div id="end_contact" height="0" width="0" style="display:none;visibility:hidden">
+
     </div>
 </div>
