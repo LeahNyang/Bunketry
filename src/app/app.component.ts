@@ -30,7 +30,7 @@ export class AppComponent {
   constructor(private responsive: BreakpointObserver) {
 
   }
-  title = 'bunketry';
+  title = 'The Proofing Ground';
   mobile = false;
   ngOnInit() {
 
