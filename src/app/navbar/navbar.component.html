@@ -8,15 +8,15 @@
         <div class="container">
             <div class="navcontainer">
                 <div class="navcomponents" style="width:40% ;">
-                    <img class="brand-logo" src="/assets/TPG_Logo_Nav.png" alt="logo" aria-hidden="true">
+                    <img class="brand-logo" src="/assets/TPG_Logo_Nav.webp" alt="logo" aria-hidden="true">
                 </div>
 
                 <div class="navcomponents" style="width:40% ;margin-left: auto;">
                     <ul class="navbar-links" *ngIf="!mobile">
-                        <li><a (click)="scrollToAboutElement()" id="nav_about">About</a></li>
-                        <li><a (click)="scrollToElement()" id="nav_menu">Menu</a></li>
-                        <li><a (click)="scrollToContactElement()" id="nav_contact">Contact</a></li>
-                        <li style=" border:1.5px solid #ead8c2;"><a href="https://theproofingground.cococart.co/" style="text-decoration: none;color: #ead8c2;" id="nav_order">Order Now</a></li>
+                        <li (click)="scrollToAboutElement()" id="nav_about" ><a >About</a></li>
+                        <li (click)="scrollToElement()" id="nav_menu"><a >Menu</a></li>
+                        <li (click)="scrollToContactElement()" id="nav_contact"><a >Contact</a></li>
+                        <li (click)="orderRedirect()"  style=" border:1.5px solid #ead8c2;" id="nav_order"><a style="text-decoration: none;color: #ead8c2;" >Order Now</a></li>
                     </ul>
 
                     <div *ngIf="mobile" style="margin-left: auto; border:1px solid #ead8c2;">

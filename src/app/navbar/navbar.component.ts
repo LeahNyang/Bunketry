@@ -30,6 +30,10 @@ export class NavbarComponent {
   scrollToAboutElement() {
     this.scroller.scrollToAnchor("about-section");
   }
+  orderRedirect() {
+    window.open("https://theproofingground.cococart.co?utm_source=organic&utm_medium=website&utm_campaign=nav_order&utm_id=12393813481", "_blank");
+  }
+
 
 
 }

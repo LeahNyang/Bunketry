@@ -34,10 +34,10 @@ export class ImageCarouselComponent{
   @Input() counter = 0;
   activeImageIndex = 0;
   public slides=[
-    { url:'/assets/Menu_01_502x631.png'},
-    { url:'/assets/Menu_02_502x631.png'},
-    { url:'/assets/Menu_03_502x631.png'},
-    { url:'/assets/Menu_04_502x631.png'}
+    { url:'/assets/Menu_01_502x631.webp'},
+    { url:'/assets/Menu_02_502x631.webp'},
+    { url:'/assets/Menu_03_502x631.webp'},
+    { url:'/assets/Menu_04_502x631.webp'}
   ];
   constructor() { }
   currentSlide = 0;
