@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { timer,interval, take } from 'rxjs';
 
@@ -10,16 +10,26 @@ import { timer,interval, take } from 'rxjs';
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.css'
 })
-export class BannerComponent {
+export class BannerComponent  implements OnInit {
   private timer = timer(0,5000);
-  
+  background_image = '/assets/Landing_01_1920x1011.webp';
+  ngOnInit() {
+    this.preloadImages(); // for the demo
+  }
+
+  preloadImages() {
+ 
+    this.background_image = this.background_images[this.index];
+    
+ 
+  }
   background_images=[
     '/assets/Landing_01_1920x1011.webp',
     '/assets/Landing_02_1920x1011.webp',
     '/assets/Landing_03_1920x1011.webp',
     '/assets/Landing_04_1920x1011.webp'
   ];
-  background_image = '/assets/Landing_01_1920x1011.webp';
+  
   index = 0;
   
   public change_background(){
@@ -32,7 +42,7 @@ export class BannerComponent {
   }
   numbers = this.timer.subscribe(n => this.change_background());
   orderRedirect() {
-    window.open("https://theproofingground.cococart.co?utm_source=organic&utm_medium=website&utm_campaign=nav_order&utm_id=12393813481", "_blank");
+    window.open("https://theproofingground.cococart.co?utm_source=organic&utm_medium=website&utm_campaign=nav_order&utm_id=12393813481", "_blank",'noopener');
   }
 
 

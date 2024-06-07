@@ -2,42 +2,43 @@
     <div class="container" [ngClass]="!mobile? '' : 'mobile_container'">
         <div [ngClass]="!mobile? 'left_container' : 'mobile_left_container'">
             <h3 >GET IN TOUCH</h3>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://api.whatsapp.com/send?phone=6589061911&text=Hello%20The%20Proofing%20Ground%21%0D%0A%0D%0AName:%0D%0AItems:%0D%0ADelivery/Pickup:%0D%0ADelivery%20Address:%0D%0A%0D%0AWe%20will%20confirm%20your%20order%20as%20soon%20as%20possible.%20For%20our%20full%20menu,%20or%20if%20you%20do%20not%20receive%20our%20confirmation%20within%2030mins,%20please%20place%20an%20order%20through%20our%20website:%20theproofingground.sg%20for%20instant%20confirmation.%20Thank%20you%21" id="out_whatsapp">    
+            <a style="text-decoration: none;color: #0d1f23;" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=6589061911&text=Hello%20The%20Proofing%20Ground%21%0D%0A%0D%0AName:%0D%0AItems:%0D%0ADelivery/Pickup:%0D%0ADelivery%20Address:%0D%0A%0D%0AWe%20will%20confirm%20your%20order%20as%20soon%20as%20possible.%20For%20our%20full%20menu,%20or%20if%20you%20do%20not%20receive%20our%20confirmation%20within%2030mins,%20please%20place%20an%20order%20through%20our%20website:%20theproofingground.sg%20for%20instant%20confirmation.%20Thank%20you%21" id="out_whatsapp">    
                 <span >
                     <img src="/assets/Contact_WA.webp" style="object-fit: contain;"> &nbsp; +65 8906 1911
                 </span>
             </a>
         
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="mailto:contact@theproofingground.sg" id="out_email">
+            <a style="text-decoration: none;color: #0d1f23;" href="mailto:contact@theproofingground.sg" target="_blank" rel="noopener noreferrer" id="out_email">
                 <span>
                     <img src="/assets/Contact_Email.webp"  style="object-fit: contain;"> &nbsp; contact&#64;theproofingground.sg
                 </span>
             </a>
             
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://tiktok.com/@theproofingground" id="out_tiktok">
+            <a style="text-decoration: none;color: #0d1f23;" href="https://tiktok.com/@theproofingground" target="_blank" rel="noopener noreferrer" id="out_tiktok">
                 <span>
                     <img src="/assets/Contact_TT.webp"  style="object-fit: contain;"> &nbsp; &#64;theproofingground
                 </span>
             </a>
             
             <br/>
-            <a style="text-decoration: none;color: #0d1f23;" href="https://instagram.com/theproofingground" id="out_instagram">
+            <a style="text-decoration: none;color: #0d1f23;" href="https://instagram.com/theproofingground" target="_blank" rel="noopener noreferrer" id="out_instagram">
                 <span >
                     <img src="/assets/Contact_IG.webp"  style="object-fit: contain;"> &nbsp; &#64;theproofingground
                 </span>
             </a>
             
             <br/>
+            <br *ngIf="mobile"/>
         </div>
         <div [ngClass]="!mobile? 'right_container' : 'mobile_right_container'" >
             <div [ngClass]="!mobile? 'right_container_padding' : ''">
                 <h3 >PICK UP AND DELIVERIES</h3>
-                <p>To collect your order, please head to Bedok Reservoir &#40;MRT DT30, Blue Line Exit A&#41;. Free delivery for orders above $50</p>
+                <p>To collect your order, please head to Bedok Reservoir MRT &#40;DT30, Blue Line&#41; Exit A. Free delivery for orders above $50.</p>
                 <br/>
                 <h3 >CORPORATE AND GROUP ORDERS</h3>
-                <p>Proofing happiness for customer from:</p>
+                <p>Proofing happiness for customers from:</p>
                 <div class="customer_panel">
                     <img src="/assets/Review_Google.webp"> 
                     <img src="/assets/Review_Meta.webp"> 
