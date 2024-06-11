@@ -11,7 +11,8 @@ export const routes: Routes = [
       {
         path: 'order',
         component: OrderComponent,
-        title: 'Order page'
+        title: 'Order page',
+        pathMatch:'full'
       },
       {
         path: '**',
