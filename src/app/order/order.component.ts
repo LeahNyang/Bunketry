@@ -10,15 +10,18 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class OrderComponent {
 
-  private sanitizer = inject(DomSanitizer);
 
-  trustedUrl : any = '';
+  public trustedUrl: any = '';
 
-  constructor(){
-    this.trustedUrl = this.sanitizer.bypassSecurityTrustUrl('https://theproofingground.cococart.co');
+
+  constructor(private sanitizer: DomSanitizer){
+    
+  }
+  ngOnInit() {
+
+    let url = `https://theproofingground.cococart.co`;
+
+     this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  updateIframeSrc(newUrl :string){
-    this.trustedUrl = this.sanitizer.bypassSecurityTrustUrl(newUrl);
-  }
 }
