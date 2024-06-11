@@ -4,12 +4,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { NgClass, NgIf ,ViewportScroller} from '@angular/common';
-import { Router } from "@angular/router";
+import { RouterModule } from "@angular/router";
+import routes from '../app.routes';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [MatButtonModule, MatMenuModule, MatIconModule,NgIf,NgClass],
+  imports: [MatButtonModule, MatMenuModule, MatIconModule,NgIf,NgClass,RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -19,6 +20,7 @@ export class NavbarComponent {
   constructor(private scroller: ViewportScroller,) {
     this.scroller.setOffset([0,100])
   }
+  
   
   scrollToElement() {
     this.scroller.scrollToAnchor("menu-section");

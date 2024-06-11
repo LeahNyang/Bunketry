@@ -1,21 +1,14 @@
 
 <header>
   <app-banner></app-banner>
+  <div class="smallbreak">
+    <br />
+  </div>
 </header>
-<div class="smallbreak">
-  <br />
-</div>
+
 <main>
   <app-navbar [mobile]="mobile"></app-navbar>
-  <app-aboutus-card [mobile]="mobile"></app-aboutus-card>
-  <app-menu-card [mobile]="mobile" [counter]="counter"></app-menu-card>
-  <app-contactus-card [mobile]="mobile"></app-contactus-card>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-
-
+  <router-outlet></router-outlet>
 
 </main>
 <footer>

@@ -7,8 +7,7 @@ import { MenuCardComponent } from './menu-card/menu-card.component'
 import { ContactusCardComponent } from './contactus-card/contactus-card.component'
 import  { ImageCarouselComponent} from './image-carousel/image-carousel.component'
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-
-import { RouterOutlet } from '@angular/router';
+import { Router ,RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -20,14 +19,16 @@ import { RouterOutlet } from '@angular/router';
     AboutusCardComponent,
     MenuCardComponent,
     ContactusCardComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+ 
   constructor(private responsive: BreakpointObserver) {
+    
 
   }
   title = 'The Proofing Ground';
@@ -39,14 +40,15 @@ export class AppComponent {
       .subscribe(result => {
         if (result.matches) {
           this.mobile = true;
+          
         } else {
           this.mobile = false;
+
         }
 
       });
 
   }
-  counter=0;
-  numbers = timer(0, 5000).subscribe(n => {this.counter+=1});
+
 
 }

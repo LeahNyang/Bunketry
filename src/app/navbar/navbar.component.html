@@ -8,15 +8,15 @@
         <div class="container">
             <div class="navcontainer">
                 <div class="navcomponents" style="width:40% ;">
-                    <img class="brand-logo" src="/assets/TPG_Logo_Nav.webp" alt="logo" aria-hidden="true">
+                    <img [routerLink]="['']" class="brand-logo" src="/assets/TPG_Logo_Nav.webp" alt="logo" aria-hidden="true">
                 </div>
 
                 <div class="navcomponents" style="width:40% ;margin-left: auto;">
                     <ul class="navbar-links" *ngIf="!mobile">
-                        <li (click)="scrollToAboutElement()" id="nav_about" ><a >About</a></li>
-                        <li (click)="scrollToElement()" id="nav_menu"><a >Menu</a></li>
-                        <li (click)="scrollToContactElement()" id="nav_contact"><a >Contact</a></li>
-                        <li (click)="orderRedirect()"  style=" border:1.5px solid #ead8c2;" id="nav_order"><a style="text-decoration: none;color: #ead8c2;" >Order Now</a></li>
+                        <li [routerLink]="['']" fragment="about-section" id="nav_about" ><a >About</a></li>
+                        <li [routerLink]="['']" fragment="menu-section" id="nav_menu"><a >Menu</a></li>
+                        <li [routerLink]="['']" fragment="contact-section" id="nav_contact"><a >Contact</a></li>
+                        <li  [routerLink]="['/order']" style=" border:1.5px solid #ead8c2;" id="nav_order"><a  style="text-decoration: none;color: #ead8c2;" >Order Now</a></li>
                     </ul>
 
                     <div *ngIf="mobile" style="margin-left: auto; border:1px solid #ead8c2;">
@@ -26,18 +26,18 @@
                         <mat-menu #menu="matMenu" >
                             <button mat-menu-item>
 
-                                <span (click)="scrollToAboutElement()" id="nav_m_about">About</span>
+                                <span [routerLink]="['']" fragment="about-section" id="nav_m_about">About</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span (click)="scrollToElement()" id="nav_m_menu">Menu</span>
+                                <span [routerLink]="['']" fragment="menu-section" id="nav_m_menu">Menu</span>
                             </button>
                             <button mat-menu-item>
 
-                                <span (click)="scrollToContactElement()" id="nav_m_contact">Contact</span>
+                                <span [routerLink]="['']" fragment="contact-section" id="nav_m_contact">Contact</span>
                             </button>
                             <button mat-menu-item>
-                                <a href="https://theproofingground.cococart.co?utm_source=organic&utm_medium=website&utm_campaign=nav_order&utm_id=12393813481" style="text-decoration: none;" id="nav_m_order">
+                                <a  [routerLink]="['/order']"  style="text-decoration: none;" id="nav_m_order">
                                     <span id="nav_m_order">Order</span>
                                 </a>
                                 

@@ -48,5 +48,5 @@ export class ImageCarouselComponent{
     this.currentSlide = next === this.slides.length ? 0 : next;
     // console.log("next clicked, new current slide is: ", this.currentSlide);
   }
-  numbers = timer(0, 5000).subscribe(n => this.onNextClick());
+  numbers = timer(0, 8000).subscribe(n => this.onNextClick());
 }
