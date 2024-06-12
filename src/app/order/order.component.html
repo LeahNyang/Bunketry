@@ -1,4 +1,6 @@
 
 <div class="cococart">
-    <iframe width="100%" height="100%" [src] =trustedUrl></iframe>
+  
+    <!-- child-component.component.html -->
+    <iframe width="100%" height="100%" #myIframe [src]="iframeUrl" (load)="iframeLoaded()"></iframe>
 </div>

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -9,19 +9,27 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './order.component.css'
 })
 export class OrderComponent {
+  @ViewChild('myIframe')
+  iframe!: ElementRef;
+  url = `https://theproofingground.cococart.co`;
 
-
-  public trustedUrl: any = '';
+  iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url); // Set your iframe URL here
 
 
   constructor(private sanitizer: DomSanitizer){
     
   }
-  ngOnInit() {
+  iframeLoaded() {
 
-    let url = `https://theproofingground.cococart.co`;
-
-     this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    // console.log('Iframe loaded');
+  }
+  ngAfterViewInit() {
+    // Wait for the iframe to be loaded
+    console.log(this.iframe)
+    this.iframe.nativeElement.contentWindow.addEventListener('message', (event: any) => {
+      // Handle the event here
+      console.log('Event received from iframe:', event);
+    });
   }
 
 }
