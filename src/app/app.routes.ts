@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OrderComponent } from './order/order.component';
+import { BlogComponent } from './blog/blog.component';
 
 export const routes: Routes = [
     {
@@ -12,6 +13,12 @@ export const routes: Routes = [
         path: 'order',
         component: OrderComponent,
         title: 'Order page',
+        pathMatch:'full'
+      },
+      {
+        path: 'blog',
+        component: BlogComponent,
+        title: 'Blog',
         pathMatch:'full'
       },
       {

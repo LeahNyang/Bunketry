@@ -7,7 +7,7 @@
     <div class="navbar ">
         <div class="container">
             <div class="navcontainer">
-                <div class="navcomponents" style="width:40% ;">
+                <div class="navcomponents" style="width:50% ;">
                     <img [routerLink]="['']" class="brand-logo" src="/assets/TPG_Logo_Nav.webp" alt="logo" aria-hidden="true">
                 </div>
 
@@ -16,6 +16,7 @@
                         <li [routerLink]="['']" fragment="about-section" id="nav_about" ><a >About</a></li>
                         <li [routerLink]="['']" fragment="menu-section" id="nav_menu"><a >Menu</a></li>
                         <li [routerLink]="['']" fragment="contact-section" id="nav_contact"><a >Contact</a></li>
+                        <li routerLink="/blog" id="blog_button"><a >Blog</a></li>
                         <li  (click)="orderRedirect()" style=" border:1.5px solid #ead8c2;" id="nav_order"><a  style="text-decoration: none;color: #ead8c2;" >Order Now</a></li>
                     </ul>
 
@@ -35,6 +36,10 @@
                             <button mat-menu-item>
 
                                 <span [routerLink]="['']" fragment="contact-section" id="nav_m_contact">Contact</span>
+                            </button>
+                            <button mat-menu-item>
+
+                                <span routerLink="/blog" id="blog_button_mobile">Blog</span>
                             </button>
                             <button mat-menu-item>
                                 <a  (click)="orderRedirect()"  style="text-decoration: none;" id="nav_m_order">

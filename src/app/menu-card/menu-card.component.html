@@ -16,7 +16,7 @@
             <div [ngClass]="!mobile? 'menu' : 'mobile_menu'">
                 <div [ngClass]="!mobile? 'menu_items' : 'mobile_menu_items'">
                     <div [ngClass]="!mobile? 'menu_colum' : 'mobile_menu_colum'">
-                        <h3>BREADS</h3>
+                        <h3>BAKES</h3>
 
                         <table>
                             <tr>
@@ -29,6 +29,10 @@
                             </tr>
                             <tr>
                                 <td class="menu_item">Wholewheat</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Rye</td>
                                 <td class="menu_price">15</td>
                             </tr>
                             <br/>
@@ -44,7 +48,73 @@
                                 <td class="menu_item">Choco-pan</td>
                                 <td class="menu_price">15</td>
                             </tr>
+                            <tr>
+                                <td class="menu_item">Cinna-pan</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+                            <br/>
+                            <tr>
+                                <td class="menu_item" style="font-weight: bold;">Tea Cakes</td>
+
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Banana Loaf</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Cranberry Lemon Loaf</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+                            
                         </table>
+                        <br/>
+                        <br/>
+                        <h3>BUTTERS, DIPS AND SPREADS</h3>
+                        <table>
+  
+                            <tr>
+                                <td class="menu_item" style="font-weight: bold;">Butter &#40;approx 100g&#41;</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Unsalted</td>
+                                <td class="menu_price">10</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Sea Salt</td>
+                                <td class="menu_price">12</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Garlic Chives</td>
+                                <td class="menu_price">12</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Garlic Rosemary</td>
+                                <td class="menu_price">12</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Truffle</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+                            <br/>
+                            <tr>
+                                <td class="menu_item" style="font-weight: bold;">Dips & Spread</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Chickpea Hummus</td>
+                                <td class="menu_price">10</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Smoked Paprika Hummus</td>
+                                <td class="menu_price">12</td>
+                            </tr>
+                            <tr>
+                                <td class="menu_item">Egg Mayo</td>
+                                <td class="menu_price">15</td>
+                            </tr>
+
+
+                        </table>
+                        
                         <div *ngIf="!mobile">
                             
                             <br />
@@ -103,6 +173,7 @@
                                 <td class="menu_price">8</td>
                             </tr>
                         </table>
+                        
                     </div>
                     <div *ngIf="mobile">
 
