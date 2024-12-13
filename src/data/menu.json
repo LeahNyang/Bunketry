@@ -1,0 +1,178 @@
+[  
+  {  
+    "id": 1, 
+    "type": "Sourdough" , 
+    "name": "Rustic",
+    "price": 12
+  },  
+  {  
+    "id": 2, 
+    "type": "Sourdough" , 
+    "name": "Wholewheat",
+    "price": 15
+  },
+  {  
+    "id": 3, 
+    "type": "Sourdough" , 
+    "name": "Rye",
+    "price": 15
+  },
+  {  
+    "id": 4, 
+    "type": "Milk bread" , 
+    "name": "Shokupan",
+    "price": 12
+  },
+  {  
+    "id": 5, 
+    "type": "Milk bread" , 
+    "name": "Choco-pan",
+    "price": 15
+  },
+  {  
+    "id": 6, 
+    "type": "Milk bread" , 
+    "name": "Cinna-pan",
+    "price": 15
+  },
+  {  
+    "id": 7, 
+    "type": "Tea Cakes" , 
+    "name": "Banana Loaf",
+    "price": 15
+  },
+  {  
+    "id": 8, 
+    "type": "Tea Cakes" , 
+    "name": "Cranberry Lemon Loaf",
+    "price": 15
+  },
+  {  
+    "id": 9, 
+    "type": "Kombucha" , 
+    "name": "Strawberry",
+    "price": 12
+  },
+  {  
+    "id": 10, 
+    "type": "Kombucha" , 
+    "name": "Triple Berry",
+    "price": 14
+  },
+  {  
+    "id": 11, 
+    "type": "Kombucha" , 
+    "name": "Pineapple",
+    "price": 14
+  },
+  {  
+    "id": 12, 
+    "type": "Kombucha" , 
+    "name": "Passion Fruit",
+    "price": 16
+  },
+  {  
+    "id": 14, 
+    "type": "Kefir" , 
+    "name": "Classic",
+    "price": 6
+  },
+  {  
+    "id": 15, 
+    "type": "Kefir" , 
+    "name": "Honey",
+    "price": 8
+  },
+  {  
+    "id": 16, 
+    "type": "Kefir" , 
+    "name": "Strawberry",
+    "price": 8
+  },
+  {  
+    "id": 17, 
+    "type": "Kefir" , 
+    "name": "Blueberry",
+    "price": 8
+  },
+  {  
+    "id": 18, 
+    "type": "Butter" , 
+    "name": "Unsalted",
+    "price": 10
+  },
+  {  
+    "id": 19, 
+    "type": "Butter" , 
+    "name": "Sea Salt",
+    "price": 12
+  },
+  {  
+    "id": 20, 
+    "type": "Butter" , 
+    "name": "Garlic Chives",
+    "price": 12
+  },
+  {  
+    "id": 21, 
+    "type": "Butter" , 
+    "name": "Garlic Rosemary",
+    "price": 12
+  },
+  {  
+    "id": 22, 
+    "type": "Butter" , 
+    "name": "Truffle",
+    "price": 15
+  },
+  {  
+    "id": 23, 
+    "type": "Dips" , 
+    "name": "Chickpea Hummus",
+    "price": 10
+  },
+
+  {  
+    "id": 24, 
+    "type": "Dips" , 
+    "name": "Smoked Paprika Hummus",
+    "price": 12
+  },
+
+  {  
+    "id": 25, 
+    "type": "Dips" , 
+    "name": "Egg Mayo",
+    "price": 15
+  },
+  {  
+    "id": 26, 
+    "type": "Seasonal" , 
+    "name": "Maple Pecan Sourdough(150g)",
+    "price": 6
+  },
+  {  
+    "id": 27, 
+    "type": "Seasonal" , 
+    "name": "Cranberry Walnut Sourdough(150g)",
+    "price": 6
+  },
+  {  
+    "id": 28, 
+    "type": "Seasonal" , 
+    "name": "Cheddar & Herbs Sourdough(150g)",
+    "price": 6
+  },
+  {  
+    "id": 29, 
+    "type": "Seasonal" , 
+    "name": "Figs & Honey Sourdough(150g)",
+    "price": 6
+  },
+  {  
+    "id": 30, 
+    "type": "Seasonal" , 
+    "name": "M-apple Compote Shokupan(200g)",
+    "price": 8
+  }
+]  

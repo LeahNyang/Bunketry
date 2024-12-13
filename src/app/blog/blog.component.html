@@ -1,1 +1,24 @@
-<p>blog works!</p>
+
+<div class="section">
+    <div class="container">
+        <h3>TPG BLOG</h3>
+        <!-- Pinned Post -->
+        <br />
+        <br />
+        <br />
+        <div style="display: flex;">
+            <div *ngFor="let blog of getPinnedBlog">
+                <h4>{{blog.title}}</h4>
+            </div>
+        </div>
+        <!-- List of Blog Post-->
+         <div>
+            <div *ngFor="let blog of BlogPost; let i = index">
+                <h4>{{blog.title}}</h4>
+                <p [innerHTML]="blog.caption">
+                </p>
+            </div>
+         </div>
+    </div>
+</div>
+

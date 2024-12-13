@@ -23,48 +23,37 @@
                                 <td class="menu_item" style="font-weight: bold;">Sourdough &#40;approx 380g&#41;</td>
 
                             </tr>
-                            <tr>
-                                <td class="menu_item">Rustic</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Wholewheat</td>
-                                <td class="menu_price">15</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Rye</td>
-                                <td class="menu_price">15</td>
-                            </tr>
+                            <ng-container *ngFor="let Sourdough of getSourdoughs">
+                                <tr>
+                                    <td class="menu_item">{{Sourdough.name}}</td>
+                                    <td class="menu_price">{{Sourdough.price}}</td>
+                                </tr>
+                                
+                            </ng-container>
+            
                             <br/>
                             <tr>
                                 <td class="menu_item" style="font-weight: bold;">Milk bread &#40;approx 380g&#41;</td>
 
                             </tr>
-                            <tr>
-                                <td class="menu_item">Shokupan</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Choco-pan</td>
-                                <td class="menu_price">15</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Cinna-pan</td>
-                                <td class="menu_price">15</td>
-                            </tr>
+                            <ng-container *ngFor="let Milkbread of getMilkbreads">
+                                <tr>
+                                    <td class="menu_item">{{Milkbread.name}}</td>
+                                    <td class="menu_price">{{Milkbread.price}}</td>
+                                </tr>
+                                
+                            </ng-container>
                             <br/>
                             <tr>
                                 <td class="menu_item" style="font-weight: bold;">Tea Cakes</td>
 
                             </tr>
-                            <tr>
-                                <td class="menu_item">Banana Loaf</td>
-                                <td class="menu_price">15</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Cranberry Lemon Loaf</td>
-                                <td class="menu_price">15</td>
-                            </tr>
+                            <ng-container *ngFor="let TeaCake of getTeaCakes">
+                                <tr>
+                                    <td class="menu_item">{{TeaCake.name}}</td>
+                                    <td class="menu_price">{{TeaCake.price}}</td>
+                                </tr>
+                            </ng-container>
                             
                         </table>
                         <br/>
@@ -75,42 +64,22 @@
                             <tr>
                                 <td class="menu_item" style="font-weight: bold;">Butter &#40;approx 100g&#41;</td>
                             </tr>
-                            <tr>
-                                <td class="menu_item">Unsalted</td>
-                                <td class="menu_price">10</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Sea Salt</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Garlic Chives</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Garlic Rosemary</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Truffle</td>
-                                <td class="menu_price">15</td>
-                            </tr>
+                            <ng-container *ngFor="let Butter of getButters">
+                                <tr>
+                                    <td class="menu_item">{{Butter.name}}</td>
+                                    <td class="menu_price">{{Butter.price}}</td>
+                                </tr>
+                            </ng-container>
                             <br/>
                             <tr>
                                 <td class="menu_item" style="font-weight: bold;">Dips & Spread</td>
                             </tr>
-                            <tr>
-                                <td class="menu_item">Chickpea Hummus</td>
-                                <td class="menu_price">10</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Smoked Paprika Hummus</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Egg Mayo</td>
-                                <td class="menu_price">15</td>
-                            </tr>
+                            <ng-container *ngFor="let Dip of getDips">
+                                <tr>
+                                    <td class="menu_item">{{Dip.name}}</td>
+                                    <td class="menu_price">{{Dip.price}}</td>
+                                </tr>
+                            </ng-container>
 
 
                         </table>
@@ -127,43 +96,43 @@
                                 <td class="menu_item" style="font-weight: bold;">Kombucha &#40;approx 480ml&#41;</td>
 
                             </tr>
-                            <tr>
-                                <td class="menu_item">Strawberry</td>
-                                <td class="menu_price">12</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Triple Berry</td>
-                                <td class="menu_price">14</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Pineapple</td>
-                                <td class="menu_price">14</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Passion Fruit</td>
-                                <td class="menu_price">16</td>
-                            </tr>
+                            <ng-container *ngFor="let Kombucha of getKombuchas">
+                                <tr>
+                                    <td class="menu_item">{{Kombucha.name}}</td>
+                                    <td class="menu_price">{{Kombucha.price}}</td>
+                                </tr>
+                            </ng-container>
                             <br/>
                             <tr>
                                 <td style="font-weight: bold;">Kefir &#40;approx 240ml&#41;</td>
                             </tr>
-                            <tr>
-                                <td class="menu_item">Classic</td>
-                                <td class="menu_price">6</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Honey</td>
-                                <td class="menu_price">8</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Strawberry</td>
-                                <td class="menu_price">8</td>
-                            </tr>
-                            <tr>
-                                <td class="menu_item">Blueberry</td>
-                                <td class="menu_price">8</td>
-                            </tr>
+                            <ng-container *ngFor="let Kefir of getKefirs">
+                                <tr>
+                                    <td class="menu_item">{{Kefir.name}}</td>
+                                    <td class="menu_price">{{Kefir.price}}</td>
+                                </tr>
+                            </ng-container>
                         </table>
+                        <br />
+                        <br />
+                        <ng-container *ngIf="getSeasonal.length > 0">
+                            <h3>SEASONAL</h3>
+                            <table>
+                                <tr>
+                                    <td class="menu_item" style="font-weight: bold;">Seasonal</td>
+    
+                                </tr>
+                 
+                                <ng-container *ngFor="let Seasonal of getSeasonal">
+                                    <tr>
+                                        <td class="menu_item">{{Seasonal.name}}</td>
+                                        <td class="menu_price">{{Seasonal.price}}</td>
+                                    </tr>
+                                </ng-container>
+                                <br/>
+                            </table>
+                        </ng-container>
+                        
                         <div *ngIf="!mobile">
                             
                             <br />

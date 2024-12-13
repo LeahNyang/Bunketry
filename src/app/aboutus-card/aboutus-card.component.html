@@ -7,34 +7,18 @@
                 <br />
                 <br />
                 <br />
-                <h2 class="bunketry_header">Hearty, healthy, homely</h2>
+                <h2 class="bunketry_header">{{SubTitle}}</h2>
                 <br />
-                <div [ngClass]="!mobile? 'desktop_caption_text' : 'mobile_caption_text'">
-                    <p>Escape the proving ground, take a pause at The Proofing Ground. 
-                        In a world that demands us to constantly prove our worth, 
-                        we offer a welcome respite to escape the daily grind and savor the 
-                        simple pleasures of hearty, healthy, and homemade food. 
-                        We invite you to slow down, connect with loved ones, and 
-                        rediscover the joy of shared experiences through the warm 
-                        embrace of home. </p>
-                    <p>
-                        Our menu features comforting classics crafted with care, 
-                        using only the finest ingredients to nourish hearts and palates. 
-                        Enjoy our hand-kneaded sourdoughs and shokupan milk breads with 
-                        curated compound butters, or indulge in our probiotic-rich 
-                        kombucha and milk kefir - all freshly made on order. 
-                    </p>
+                <div [ngClass]="!mobile? 'desktop_caption_text' : 'mobile_caption_text'" >
+                   <p>{{Snippets[0].content}}</p>
+                   <p>{{Snippets[1].content}}</p>
                 </div>
-
-
             </div>
             <div [ngClass]="!mobile? 'desktop_image' : 'mobile_image'">
-                <img src="/assets/About_816x499.webp">
+                <img src={{BannerImage}}>
             </div>
             <h3 *ngIf="mobile" style="margin-right: auto;">ABOUT US</h3>
         </div>
-
-
     </div>
     <div id="end_about" height="0" width="0" style="display:none;visibility:hidden">
 
