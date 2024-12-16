@@ -27,7 +27,7 @@ export class BlogComponent {
 
     this.myheaders.append('Content-Type', 'application/json');
     this.myheaders.append('Authorization', 'Bearer xErIOkYe7vkhzRsdztzapKxnW-sTZ0yi');
-    fetch('http://backend.scarletvigil.local/items/Blog', {
+    fetch('http://backend.scarletvigil.com/items/Blog', {
       method: 'GET',
       headers: this.myheaders
     })
